@@ -1,38 +1,267 @@
-.App {
-  text-align: center;
+
+*{
+  box-sizing: border-box;
+  font-family: Inter;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-color: #0B1930;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar--links{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 80px;
+  margin-right: 40px; 
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.navbar--link{
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+.navbar--logos{
+  display: flex;
+  column-gap: 20px;
+}
+
+.navbar--logo{
+  width: 30px;
+}
+
+.scrollbar{
+  position: fixed;
+  right: 0;
+  top: 40%;
+  margin-right: 100px;
+}
+
+.circle--filled{
+  height: 20px;
+  width: 20px;
+  background-color: #FF4A57;
+  border-radius: 50%;
+  margin-top: 15px;
+  
+}
+
+.circle--empty{
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-color: #FF4A57;
+  border-radius: 50%;
+}
+
+.hero--content{
+  margin: 250px 200px 200px 200px;
+  max-width: 50%;
+  color: #F2F2F2;
+}
+
+.hero--title{
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.hero--hr {
+  background-color: #FF4A57;
+  border: none;
+  height: 3px;
+}
+
+.hero--description{
+  max-width: 80%;
+}
+
+.about--content{
+  margin: 400px 200px 200px 200px;
+  
+}
+
+.about--title{
+  color:#FF4A57;
+  font-size: 50px;
+  margin-bottom: 7px;
+  padding-top: 40px;
+}
+
+.about--hr{
+  background-color: #FF4A57;
+  border: none;
+  height: 3px;
+  width: 80px;
+  float: left;
+}
+
+.about--description{
+  margin-top: 100px;
+  color: #F2F2F2;
+  display: flex;
+  column-gap: 50px;
+}
+
+.about--description p{
+  max-width: 60%;
+}
+
+.skills--content{
+  margin: 400px 200px 200px 200px;
+  
+}
+
+.skills--title{
+  color:#FF4A57;
+  font-size: 50px;
+  margin-bottom: 7px;
+  padding-top: 40px;
+}
+
+.skills--hr{
+  background-color: #FF4A57;
+  border: none;
+  height: 3px;
+  width: 80px;
+  float: left;
+}
+
+.skillcard{
+  background-color: #2B2D40;
+  max-width: 300px;
+  max-height: 400px;
+  margin-top: 100px;
+  color: #F2F2F2;
+}
+
+.skillcard img{
+  margin: 80px 0px 0px 30px;
+  width: 60px;
+}
+
+.skillcard--title{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.skillcard--description{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  
+}
+
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects{
+  margin: 400px 200px 200px 200px;
+  
+}
+
+.projects--title{
+  color:#FF4A57;
+  font-size: 50px;
+  margin-bottom: 7px;
+  padding-top: 40px;
+}
+
+.projects--hr{
+  background-color: #FF4A57;
+  border: none;
+  height: 3px;
+  width: 80px;
+  float: left;
+}
+
+.projects--cards{
+  margin: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 60px;
+}
+
+.projectcard{
+  background-color: #2B2D40;
+  color: #F2F2F2;
+  height: 470px;
+  width: 300px;
+}
+
+.projects img{
+  margin: 30px auto;
+  width: 161px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.projectcard--title{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.2em;
+  font-weight: 700;
+  max-width: 300px;
+}
+
+.projectcard--description{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  max-width: 300px;
+  
+}
+
+.projectcard--link{
+  color: #FF4A57;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+.contact{
+  margin: 400px 200px 200px 200px;
+}
+
+.contact--title{
+  color: #FF4A57;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact--description{
+  color: #F2F2F2;
+  text-align: center;
+  max-width: 50%;
+  margin: 60px auto;
+}
+
+.contact--email{
+  color: #FF4A57;
+  background-color: transparent;
+}
+
+.contact--imgs{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact--logo{
+  height: 50px;
 }

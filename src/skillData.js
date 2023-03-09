@@ -1,7 +1,7 @@
 export default[
     {
         title:"Web Development",
-        description:"Well-versed in languages such as HTML, CSS and JavaScript, as well as frameworks such as React.js.",
+        description:"Expertise in developing user-friendly front-end applications for the web, using HTML, CSS and React.js.",
         image:"./test.png"
     },
     {
@@ -10,8 +10,8 @@ export default[
         image:"./database.png"
     },
     {
-        title:"Microsoft Azure",
-        description:"Certified in the use of Microsoft Azure cloud solutions.",
-        image:"./computer.png"
+        title:"Mobile Applications",
+        description:"Developing full-stack native applications on both iOS and Android devices.",
+        image:"./phone-icon.png"
     }
 ]
